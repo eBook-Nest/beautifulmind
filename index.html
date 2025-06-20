@@ -24,150 +24,170 @@
   <!-- Canonical -->
   <link rel="canonical" href="https://www.contohsitusmu.com/artikel/iman-tanpa-bukti">
 
-  <style>
-    body {
-      background-color: #121212;
-      color: #e0e0e0;
-      font-family: Georgia, serif;
-      line-height: 1.7;
-      padding: 20px;
-      margin: 0;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      background-color: #1e1e1e;
-      border-bottom: 1px solid #333;
-    }
-    .btn-dashboard {
-      background-color: #ff5555;
-      color: white;
-      border: none;
-      padding: 8px 16px;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .menu-icon {
-      cursor: pointer;
-      font-size: 24px;
-      color: white;
-    }
-    .side-menu {
-      position: fixed;
-      top: 0;
-      right: -200px;
-      width: 200px;
-      height: 100%;
-      background-color: #1e1e1e;
-      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-      padding-top: 60px;
-      transition: right 0.3s ease-in-out;
-    }
-    .side-menu.show {
-      right: 0;
-    }
-    .side-menu a {
-      display: block;
-      color: #ccc;
-      padding: 12px 20px;
-      text-decoration: none;
-    }
-    .side-menu a:hover {
-      background-color: #333;
-    }
-    h1 {
-      text-align: center;
-      color: #ff5555;
-      margin-top: 30px;
-    }
-    p {
-      max-width: 800px;
-      margin: auto;
-      padding: 10px 0;
-    }
-    .tags {
-      max-width: 800px;
-      margin: 30px auto;
-      font-size: 0.9em;
-      color: #aaa;
-    }
-    .tags span {
-      background-color: #333;
-      padding: 6px 12px;
-      margin: 4px;
-      display: inline-block;
-      border-radius: 12px;
-      color: #fff;
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #888;
-      text-align: center;
-      padding: 20px;
-    }
-    .audio-player {
-      background-color: #1e1e1e;
-      border: 1px solid #333;
-      padding: 16px;
-      border-radius: 12px;
-      max-width: 500px;
-      margin: 30px auto;
-      text-align: center;
-      color: #fff;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    }
-    #playPauseBtn {
-      background-color: #ff5555;
-      color: #fff;
-      border: none;
-      padding: 8px 20px;
-      border-radius: 8px;
-      font-size: 1em;
-      cursor: pointer;
-      margin-bottom: 10px;
-    }
-    #seekSlider {
-      width: 100%;
-      margin-top: 10px;
-      accent-color: #ff5555;
-    }
-    #audioStatus {
-      display: block;
-      font-size: 0.9em;
-      margin-top: 6px;
-      color: #aaa;
-    }
-    .highlight {
-      background-color: #333;
-      border-left: 4px solid #ff5555;
-      padding-left: 10px;
-      transition: background-color 0.3s ease;
-    }
-    .audio-player {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #1e1e1e;
-  border-top: 1px solid #333;
-  padding: 10px 20px;
+<style>
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Georgia, serif;
+    line-height: 1.7;
+    padding: 20px;
+    margin: 0;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+  }
+  .menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+  }
+  .side-menu {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: #1e1e1e;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+    transition: right 0.3s ease-in-out;
+  }
+  .side-menu.show {
+    right: 0;
+  }
+  .side-menu a {
+    display: block;
+    color: #ccc;
+    padding: 12px 20px;
+    text-decoration: none;
+  }
+  .side-menu a:hover {
+    background-color: #333;
+  }
+  h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 30px;
+  }
+  p {
+    max-width: 800px;
+    margin: auto;
+    padding: 10px 0;
+  }
+  .tags {
+    max-width: 800px;
+    margin: 30px auto;
+    font-size: 0.9em;
+    color: #aaa;
+  }
+  .tags span {
+    background-color: #333;
+    padding: 6px 12px;
+    margin: 4px;
+    display: inline-block;
+    border-radius: 12px;
+    color: #fff;
+  }
+  footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #888;
+    text-align: center;
+    padding: 20px;
+  }
+  .audio-player {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    padding: 16px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 30px auto;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  #playPauseBtn {
+    background-color: #55ccff;
+    color: black;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  #seekSlider {
+    width: 100%;
+    margin-top: 10px;
+    accent-color: #55ccff;
+  }
+  #audioStatus {
+    display: block;
+    font-size: 0.9em;
+    margin-top: 6px;
+    color: #aaa;
+  }
+  .highlight {
+    background-color: #333;
+    border-left: 4px solid #55ccff;
+    padding-left: 10px;
+    transition: background-color 0.3s ease;
+  }
+  .audio-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1e1e1e;
+    border-top: 1px solid #333;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4);
+  }
+header {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  z-index: 1000;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #333;
 }
-  </style>
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #55ccff;
+  text-decoration: none;
+  font-family: 'Georgia', serif;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu-icon {
+  position: absolute;
+  right: 20px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+</style>
 </head>
 <body>
 
 <header>
-  <a href="dasbor.html" class="btn-dashboard">Ke Dasbor</a>
+  <a href="index.html" class="logo">Beautiful Minddd</a>
   <div class="menu-icon" onclick="toggleMenu()">&#8942;</div>
 </header>
 
@@ -186,7 +206,6 @@
   <input type="range" id="seekSlider" value="0" min="0" max="100">
   <audio id="customAudio" preload="metadata">
     <source src="pt1 sam harris.aac" type="audio/aac">
-    Browser Anda tidak mendukung audio.
   </audio>
 </div>
 <p id="paragraf1">Adalah bukan maksudku untuk menuding ajaran Islam secara khusus akan cela dan kutuk; namun pada masa ini dalam sejarah umat manusia, tiadalah dapat disangkal bahwa ia telah menjadi bahaya yang khusus—baik bagi mereka yang beriman kepadanya, maupun bagi mereka yang tiada demikian.</p>
@@ -260,6 +279,26 @@
   <span>Refleksi</span>
   <span>Filosofi</span>
 </div>
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://ebook-nest.github.io/beautifulmind/';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 <footer>
   unknown name – 20 Juni 2025<br>
